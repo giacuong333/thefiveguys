@@ -153,6 +153,10 @@ const products = [
     },
 ];
 
+export let loadProducts = () => {
+    window.onload = createProducts();
+};
+
 // render products 
 export const createProducts = () => {
     let product = "";
@@ -168,7 +172,7 @@ export const createProducts = () => {
               <span class="product-desc">${products[i].title}</span>
               <span class="product-price">${products[i].price}</span>
             </a> 
-        </div >
+        </div>
         `;
     }
     document.querySelector("#products-area").innerHTML = product;
@@ -185,7 +189,6 @@ export const getProducts = () => {
         localStorage.setItem("products", JSON.stringify(products)); // sets default products for local storage
     return JSON.parse(localStorage.getItem("products")); // returns products object
 };
-
 
 // add products to cart 
 let addProducts = (idProduct) => {
