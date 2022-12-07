@@ -175,6 +175,7 @@ export const createProducts = () => {
 };
 
 export let productsDetails = (idProduct) => {
+    JSON.parse(localStorage.getItem("products"));
     console.log(idProduct);
 };
 
