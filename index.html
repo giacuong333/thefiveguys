@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./assets/css/resposive_home.css" />
   </head>
 
-  <body>
+  <body onload="loadProducts()">
     <div class="app">
       <!-- header -->
       <header class="header">
@@ -277,15 +277,16 @@
         </div>
       </form>
       <div class="nav-sign">
+        <div class="pagesLoginOut"></div>
         <div class="row">
           <div class="col l-6 m-6 c-12">
-            <div class="nav-sign-btn">
-              <a href="./login/dean1.html" class="btn btn--sign-in">Đăng nhập</a>
+            <div class="nav-sign-btn logoutLocation">
+              <a href="./user/dang-nhap.html" class="btn btn--sign-in">Đăng nhập</a>
             </div>
           </div>
           <div class="col l-6 m-6 c-12">
             <div class="nav-sign-btn">
-              <a href="./login/dean2.html" class="btn btn--sign-out">Đăng ký</a>
+              <a href="./user/dang-ky.html" class="btn btn--sign-out">Đăng ký</a>
             </div>
           </div>
         </div>
@@ -328,14 +329,11 @@
       </ul>
     </nav>
     <!-- end overlay -->
-
-    <!-- scroll to top -->
-    <button type="button" onclick="toTop()" id="top-btn" title="Go to top">
-      <i class="ti-arrow-up"></i>
-    </button>
   </body>
+
+  <script src="./js/users.js" type="module"></script>
 
 </html>
 
 <script src="./slides.js"></script>
-<script type="module" src="./js/render-products.js"></script>
+<script src="./js/products.js"></script>

@@ -13,7 +13,7 @@
         <p class="trangchu">
             <a href="../index.html">Trang chủ</a>
         </p>
-        <form>
+        <form id="more-info">
             <table class="bang">
                 <tr>
                     <td width="40%" class="ten">ÁO LEN KARMA</td>
@@ -28,9 +28,9 @@
                             hàng ngày của bạn. - Chất liệu: cotton/nylon; lớp lót: polyester - Có thể giặt máy - Kiểu...
                         </p>
                         <p>
-                            <input class="soluong" type="number" min="1" value="1">
+                            <input id="quantity" class="soluong" type="number" min="1" value="1">
                         </p>
-                        <input class="mua" type="submit" value="MUA HÀNG">
+                        <input onclick="getQuantity()" class="mua" type="submit" value="MUA HÀNG" onclick="">
                         <input class="goi" type="submit" value="GỌI">
                     </td>
                 </tr>
@@ -86,6 +86,7 @@
                 });
             }
         </script>
+        <script src="../js/products.js"></script>
     </body>
 
 </html>

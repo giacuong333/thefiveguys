@@ -190,7 +190,7 @@
 </head>
 
 <body>
-    <form name="frm_login" method="post" action="dean2.html" onsubmit="return kiemtra()">
+    <form id="frm_login" name="frm_login" onsubmit="return kiemtra()">
         <!-- <div id="header">
             <div class="logo">							    
                 <p>Shop FIVE GUYS</p>                     
@@ -210,15 +210,15 @@
                     <h1 id="noidung">Tạo tài khoản</h1>
                 </div>
                 <div>
-                    <input id="ho" type="text" name="txt_id" placeholder="Họ" required>
-                    <input id="ten" type="text" name="txt_id" placeholder="Tên" required>
+                    <input id="ho" data-type="ho" type="text" name="txt_id" placeholder="Họ" required>
+                    <input id="ten" data-type="ten" type="text" name="txt_id" placeholder="Tên" required>
                 </div>
                 <div>
-                    <input id="email" type="email" placeholder="Email" required>
-                    <input id="sdt" type="text" placeholder="Số điện thoại" required>
+                    <input id="email" data-type="email" type="email" placeholder="Email" required>
+                    <input id="sdt" data-type="soDienThoai" type="text" placeholder="Số điện thoại" required>
                 </div>
                 <div>
-                    <input id="matkhau" type="password" name="txt_pass" placeholder="Mật khẩu" required>
+                    <input id="matkhau" data-type="matKhau" type="password" name="txt_pass" placeholder="Mật khẩu" required>
                 </div>
                 <div id="error" style="color:red"></div>
                 <div>
@@ -339,7 +339,7 @@
             </div>
         </div>
     </form>
-
+    <script src="../js/users.js" type="module"></script>
 </body>
 
 </html>
